@@ -1,0 +1,28 @@
+Purpose 
+		-This simple application is inspired by my own experience.
+		Since this year started (2022) , i have been in my fitness journey.
+		This June is my sixth month, and i have already lost 22kg. Therefore, i decided
+		to build a simple system linked to my own experience.
+		
+
+Functionalities
+1.User can enter food name
+2.User can enter food calorie
+3.User can enter target calorie(for that day)
+4.User can use add button to add those inputs in the table
+5.User can clear all the inputs in just one click
+6.User can reset entries in the table
+7.User can view the sum of calories each time he/she has added an entry
+8.In the table, user can still edit all the added entry in the table (names and calorie)
+9.User can disable and enable entries simultaneously(calories sum will change and color of the row to gray  when entry is disabled)
+I have used enable/disable rather than delete for some people who are food conscious tend to know the food they should cut to avoid exceeded target calories on the next following days.
+10. A message alert will show up when the user food entries calories sum on that day exceeded the target calories
+	
+Other functionalities
+	1.Can be viewed without problem in User interface on your mobile and desktop (Responsive)
+
+	
+Own critique
+	1. For better user experience, API can be very useful to have intellisense for foods list  and make the calorie number automatically filled out
+	
+

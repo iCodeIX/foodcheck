@@ -1,0 +1,169 @@
+/* general settings */
+
+*,body,html{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	counter-reset: section;
+}
+
+.main-container{
+	width:100%;
+	padding:10px;
+}
+
+/* upper side food data inputs and buttons */
+
+input[type="text"],input[type="number"]{
+	
+
+	height:40px;
+	padding:10px;
+	border:2px solid #ccc;
+	border-radius:5px;
+	outline:0;
+	
+}
+
+.input-up{
+	width:33%;
+}
+
+.btn-up{
+	width:33%;
+	padding:10px;
+	border:2px solid #ccc;
+	border-radius:5px;
+	outline:0;
+	color:#fff;
+	cursor:pointer;
+	letter-spacing:2px;
+	
+
+}
+
+
+.input-food-container, .btn-food-container{
+	display:flex;
+	gap:10px;
+	margin:5px;
+}
+
+.add{
+	background:#007BFF;
+}
+
+.clear{
+	background:#6C757D;
+}
+
+.reset{
+	background:#DC3545;
+}
+
+.result{
+	background:#FEA600;
+}
+
+
+.calorie-sum{
+	min-height:40px;
+	float:right;
+	margin:10px;
+	width:50%;
+	padding:5px;
+	color:#fff;
+	font-size:24px;
+	text-align:center;
+}
+
+
+
+
+
+/* foods entry table */
+
+.food-list-container{
+	width:100%;
+	height:600px;
+	overflow:scroll;
+}
+
+
+.foods-list-table{
+	
+	font-family: arial, sans-serif;
+ 	border-collapse: collapse;
+  	width: 100%;
+  	padding:10px;
+  	
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+
+table .disabled-food{
+	background-color:#ccc;
+}
+
+.food-num::before{
+	counter-increment: section;  
+	content: "FOOD#" counter(section) ": ";
+}
+
+.food-name, .calorie-count{
+	width:100px;
+}
+.cal-max-alert-container{
+	background: rgba(108, 122, 137, 0.3);
+	width:100%;
+	height:100vh;
+	position:absolute;
+	top:0;
+	display:none;
+	
+}
+
+
+.cal-max-message{
+	background:red;
+	color:#fff;
+	padding:10px;
+	text-align:center;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+
+/* FOR DESKTOP */
+
+@media only screen and (min-width: 768px){
+	
+	.main-container{
+	 display:flex;
+	  flex-direction: row-reverse;
+	 
+	}
+	
+	.top-items-container{
+		width:40%;
+		align-self:center;
+
+	}
+     .food-list-container{
+		width:60%;
+		
+	}
+	
+	
+
+}

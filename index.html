@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang=en-US>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="main-container">
+		<!-- buttons and inputs on top -->
+		<div class="top-items-container">
+			<div class="input-food-container">
+				<input type="text" class="input-up" id="foodName" placeholder="Enter food name" required>
+				<input type="number" class="input-up" id="calorie"  onkeydown="return isNumberKey(event)" placeholder="Enter calories" required>
+				<input type="text" class="input-up" id="targetCalorie" placeholder="Enter target calories" required>
+			</div>
+			<div class="btn-food-container">
+				<button class="clear btn-up" id="clearInputsBtn">CLEAR INPUTS</button>
+				<button class="reset btn-up" id="resetEntriesBtn">RESET ENTRIES</button>
+				<button class="add-btn btn add btn-up">A D D</button>
+			</div>
+		
+			<p class="calorie-sum result">Total calories : <span id="calorieSum">0</span></p>
+		</div>
+		
+		<!-- filled with data dynamically when adding entry -->
+		<div class="food-list-container">
+			<table class="foods-list-table">
+				<tr><th>ENTRY#</th><th>FOOD NAME</th><th>FOOD CALORIE</th><th>ENABLE / DISABLE</th></tr>
+			</table>
+		</div>
+		
+		
+		<!-- alert show when maximized calorie --> 
+		<div class="cal-max-alert-container">
+			<p class="cal-max-message">You maximized your target calories for today</p>
+		</div>
+		
+	</div>
+		
+</body>
+<script src="scripts.js"></script>
+</html>
